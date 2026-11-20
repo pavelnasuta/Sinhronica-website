@@ -1,0 +1,53 @@
+name: Deploy Sinhronica landing
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout landing repository
+        uses: actions/checkout@v4
+      - name: Copy original brand graphics from Sinhronica PWA
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p _site/assets/onboarding _site/assets/icons _site/assets/social
+          base="https://raw.githubusercontent.com/pavelnasuta/Sinhronica/main/public"
+          for file in \
+            onboarding/role-athlete.png \
+            onboarding/role-parent.png \
+            onboarding/role-coach.png \
+            icons/sinhronica-v1-icon-32.png \
+            icons/sinhronica-v1-icon-192.png \
+            icons/sinhronica-v1-apple-touch-icon.png \
+            social/sinhronica-share.png; do
+            curl --fail --location --silent --show-error --retry 3 \
+              "$base/$file" --output "_site/assets/$file"
+          done
+          cp index.html robots.txt .nojekyll _site/
+          if [[ -f CNAME ]]; then cp CNAME _site/; fi
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - name: Publish
+        id: deployment
+        uses: actions/deploy-pages@v4
