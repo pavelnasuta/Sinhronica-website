@@ -145,6 +145,38 @@
     @media(max-width:1060px){.hero-grid{gap:18px}.float-figure{left:-20px}.float-notes{right:-20px}.hero h1{font-size:clamp(43px,5.3vw,68px)}.privacy-grid{gap:50px}.feature-card{padding:25px}.role-copy{padding:25px 23px 27px}}
     @media(max-width:850px){.container{width:min(680px,calc(100% - 36px))}.nav-links>a:not(.nav-cta){display:none}.hero{min-height:0}.hero-grid{grid-template-columns:1fr;gap:0;padding-top:69px;padding-bottom:105px}.hero-copy{max-width:640px}.hero h1{max-width:630px;font-size:clamp(46px,8vw,68px)}.hero-visual{margin:22px auto 0;width:min(100%,520px);min-height:505px}.phone{transform:rotate(3deg) scale(.95)}.float-figure{left:10px}.float-notes{right:10px}.role-cards{grid-template-columns:1fr 1fr}.role-card:last-child{grid-column:span 2;display:grid;grid-template-columns:1fr 1.2fr;min-height:290px}.role-card:last-child .role-art{height:100%}.role-card:last-child .role-art img{height:225px}.features .large{grid-column:span 6}.features .small{grid-column:span 6}.privacy-grid{grid-template-columns:1fr;gap:35px}.faq-layout{grid-template-columns:1fr;gap:28px}.end-card{padding:45px;grid-template-columns:1fr}.end-card .button{justify-self:start}.feature-top-tag{display:none}}
     @media(max-width:580px){.container{width:calc(100% - 32px)}.section{padding:72px 0}.nav{height:75px}.brand img{width:37px;height:37px}.brand-name{font-size:17px}.brand-caption{font-size:9px}.nav-cta{font-size:11px;padding:10px 12px}.hero{padding-top:75px}.hero-grid{padding-top:46px;padding-bottom:70px}.hero .eyebrow{font-size:10px}.hero h1{font-size:clamp(41px,10vw,56px);line-height:1.095}.hero-sub{font-size:14px;line-height:1.85}.hero-actions{gap:10px}.hero-actions .button{width:100%;justify-content:center}.trust-line{font-size:10px;gap:7px}.hero-visual{min-height:465px;width:100%;margin-top:30px}.phone{transform:rotate(4deg) scale(.83)}.float{padding:10px;gap:7px;border-radius:12px}.float-figure{top:65px;left:0}.float-notes{bottom:49px;right:-4px}.float strong{font-size:10px}.float span{font-size:8px}.float-icon{width:29px;height:29px;border-radius:9px}.float-icon svg{width:17px;height:17px}.orbit{width:100%;max-width:355px}h2{font-size:clamp(30px,8vw,39px)}.body-lead{font-size:14px}.section-intro{margin-bottom:28px}.role-cards{grid-template-columns:1fr;gap:15px}.role-card:last-child{grid-column:auto;display:flex;min-height:0}.role-art{height:190px}.role-art img{height:179px}.role-card:last-child .role-art{height:190px}.role-card:last-child .role-art img{height:179px}.role-copy{padding:22px 23px 27px}.role-copy h3{font-size:23px}.role-copy p{font-size:13px}.features{gap:13px}.features .large,.features .small{grid-column:span 12;min-height:0}.feature-card{padding:24px;min-height:205px!important}.feature-card h3{font-size:19px}.feature-card .feature-icon{margin-bottom:21px}.feature-card .mini-graph{display:none}.steps{grid-template-columns:1fr;gap:22px;margin-top:36px}.step{padding-top:18px}.step-num{margin-bottom:14px}.step p{max-width:unset;margin:0}.faq-layout{gap:17px}.faq summary{font-size:14px}.end-section{padding:42px 0 66px}.end-card{padding:36px 25px;border-radius:25px}.end-card .button{width:100%}.footer-row{align-items:flex-start;flex-direction:column}.footer-links{flex-wrap:wrap;gap:17px}.privacy-fact{padding:18px}.privacy-facts{gap:10px}}
+
+    /* Clearer value proposition and role-specific entry points. The hero mockup stays unchanged. */
+    .role-copy h3{font-size:24px;letter-spacing:-.045em}
+    .role-copy p{font-size:14px;line-height:1.72}
+    .check-list{margin-top:auto;gap:11px}
+    .check-list li{font-size:13px;line-height:1.6}
+    .role-action{margin-top:25px;border-top:1px solid #e7edf7;padding-top:19px;display:flex;align-items:center;justify-content:space-between;gap:8px;color:#1164b7;font-size:13px;font-weight:800;transition:color .2s}
+    .role-action .icon{width:19px;height:19px;transition:transform .2s}
+    .role-action:hover{color:#493ed3}.role-action:hover .icon{transform:translateX(4px)}
+    .moments-section{position:relative;background:linear-gradient(155deg,#effdff 0%,#f6f8ff 43%,#f0efff 100%);overflow:hidden}
+    .moments-section::before{content:"";position:absolute;right:-180px;top:-230px;width:560px;height:560px;border:1px solid rgba(31,107,199,.11);border-radius:50%;box-shadow:0 0 0 90px rgba(31,107,199,.025),0 0 0 180px rgba(31,107,199,.018);pointer-events:none}
+    .moments-heading{display:grid;grid-template-columns:1.25fr .75fr;gap:50px;align-items:end;margin-bottom:36px;position:relative}
+    .moments-heading h2{margin-bottom:0}
+    .moments-heading .body-lead{font-size:15px}
+    .moment-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;position:relative}
+    .moment-card{display:flex;flex-direction:column;min-height:375px;background:#fff;border:1px solid rgba(190,209,239,.85);border-radius:25px;padding:25px 26px 23px;box-shadow:0 18px 42px rgba(40,69,122,.045);transition:transform .22s,box-shadow .22s}
+    .moment-card:hover{transform:translateY(-4px);box-shadow:0 23px 52px rgba(40,69,122,.09)}
+    .moment-top{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:25px}
+    .moment-number{font-size:12px;letter-spacing:.09em;color:#889bb9;font-weight:800}
+    .moment-tag{font-size:10px;letter-spacing:.02em;color:#3c6899;font-weight:800;text-align:right}
+    .moment-symbol{display:grid;place-items:center;width:51px;height:51px;border-radius:16px;margin:24px 0 21px;background:#defaff;color:#086caa}
+    .moment-symbol.moment-violet{background:#eee6ff;color:#6e42c6}
+    .moment-symbol.moment-blue{background:#e5edff;color:#2446ca}
+    .moment-card h3{font-size:20px;line-height:1.31;letter-spacing:-.045em;margin-bottom:12px;max-width:275px}
+    .moment-card>p{font-size:13px;color:#627493;line-height:1.8;margin-bottom:24px}
+    .moment-result{margin-top:auto;border-top:1px solid #e5ebf5;padding-top:18px;display:flex;flex-direction:column;gap:5px}
+    .moment-result span{font-size:10px;font-weight:800;color:#8090aa;letter-spacing:.1em;text-transform:uppercase}
+    .moment-result strong{font-size:13px;color:#124987;line-height:1.5}
+    .moments-note{display:flex;align-items:center;gap:10px;font-size:12px;color:#5d7195;line-height:1.7;margin:24px 0 0;font-weight:600}
+    .moments-note .icon{height:17px;width:17px;color:#2274b9}
+    @media(max-width:850px){.moments-heading{grid-template-columns:1fr;gap:18px}.moment-grid{grid-template-columns:1fr 1fr}.moment-card:last-child{grid-column:span 2;min-height:0}.moment-card{min-height:350px}}
+    @media(max-width:580px){.role-action{margin-top:22px}.moment-grid{grid-template-columns:1fr;gap:12px}.moment-card,.moment-card:last-child{grid-column:auto;min-height:0}.moment-card{padding:23px}.moment-symbol{margin:19px 0}.moments-heading{margin-bottom:26px}.moments-heading .body-lead{font-size:14px}.moments-note{align-items:flex-start;font-size:11px}.moments-note .icon{margin-top:2px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
   </style>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Синхроника","applicationCategory":"SportsApplication","operatingSystem":"Web, Android, iOS","description":"Личное PWA-приложение для синхронного плавания: дневник тренировок, фигуры, номера и инструменты для спортсменок, родителей и тренеров.","url":"https://nasuta.ru/Sinhronica/","inLanguage":"ru"}</script>
@@ -216,10 +248,70 @@
       <div class="container">
         <div class="section-intro"><p class="eyebrow">Одно приложение · три роли</p><h2 id="audiences-title">Каждый видит в спорте своё.<br>Синхроника помогает всем.</h2><p class="body-lead">Без сложных кабинетов и общих таблиц. Выбери свою роль — приложение покажет инструменты, которые нужны именно тебе.</p></div>
         <div class="role-cards">
-          <article class="role-card"><div class="role-art art-athlete"><img src="assets/onboarding/role-athlete.png" loading="lazy" alt="Иллюстрация спортсменки по синхронному плаванию" /></div><div class="role-copy"><span class="role-number">01 / СПОРТСМЕНКЕ</span><h3>Видеть, как ты растёшь.</h3><p>За каждым новым элементом — десятки попыток. Сохраняй путь, а не только результат на соревнованиях.</p><ul class="check-list"><li>Записывай тренировки и ощущения</li><li>Собирай карточки своих номеров</li><li>Отмечай освоенные фигуры и достижения</li></ul></div></article>
-          <article class="role-card"><div class="role-art art-parent"><img src="assets/onboarding/role-parent.png" loading="lazy" alt="Иллюстрация родителя спортсменки" /></div><div class="role-copy"><span class="role-number">02 / РОДИТЕЛЯМ</span><h3>Быть рядом. Понимать больше.</h3><p>Поддерживать легче, когда можно собрать важное о спортивном пути ребёнка в одном месте.</p><ul class="check-list"><li>Сохраняй достижения и награды детей</li><li>Учитывай расходы на занятия и старты</li><li>Пользуйся справочником фигур и материалами</li></ul></div></article>
-          <article class="role-card"><div class="role-art art-coach"><img src="assets/onboarding/role-coach.png" loading="lazy" alt="Иллюстрация тренера по синхронному плаванию" /></div><div class="role-copy"><span class="role-number">03 / ТРЕНЕРАМ</span><h3>Меньше искать. Больше тренировать.</h3><p>Нужные материалы и структура программ под рукой — там, где идёт настоящая работа.</p><ul class="check-list"><li>Быстро открывай фигуры и их DD</li><li>Собирай структуру и таймлайн номеров</li><li>Используй метроном и инструменты подготовки</li></ul></div></article>
+          <article class="role-card">
+            <div class="role-art art-athlete"><img src="assets/onboarding/role-athlete.png" loading="lazy" alt="Иллюстрация спортсменки по синхронному плаванию" /></div>
+            <div class="role-copy">
+              <span class="role-number">01 / СПОРТСМЕНКЕ</span>
+              <h3>Замечай свой прогресс, а не только медали.</h3>
+              <p>Не каждый шаг виден на соревнованиях. Но каждая тренировка приближает к твоей цели.</p>
+              <ul class="check-list"><li>Записывай тренировки и ощущения</li><li>Сохраняй структуру своих номеров</li><li>Отмечай освоенные фигуры и достижения</li></ul>
+              <a class="role-action" href="https://nasuta.ru/Sinhronica/" data-open-app data-audience="athlete">Попробовать Синхронику <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+          <article class="role-card">
+            <div class="role-art art-parent"><img src="assets/onboarding/role-parent.png" loading="lazy" alt="Иллюстрация родителя спортсменки" /></div>
+            <div class="role-copy">
+              <span class="role-number">02 / РОДИТЕЛЯМ</span>
+              <h3>Видеть больше, чем результаты стартов.</h3>
+              <p>Спортивный путь ребёнка складывается из достижений, усилий и заботы, которую легко не заметить.</p>
+              <ul class="check-list"><li>Веди историю наград и результатов детей</li><li>Считай расходы на спорт по категориям</li><li>Разбирайся в фигурах и их сложности</li></ul>
+              <a class="role-action" href="https://nasuta.ru/Sinhronica/" data-open-app data-audience="parent">Попробовать Синхронику <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+          <article class="role-card">
+            <div class="role-art art-coach"><img src="assets/onboarding/role-coach.png" loading="lazy" alt="Иллюстрация тренера по синхронному плаванию" /></div>
+            <div class="role-copy">
+              <span class="role-number">03 / ТРЕНЕРАМ</span>
+              <h3>Больше внимания тренировке, меньше поиску.</h3>
+              <p>Справочник и рабочие материалы доступны прямо на телефоне — перед занятием и у бортика.</p>
+              <ul class="check-list"><li>Открывай каталог фигур и DD</li><li>Собирай блоки и хронометраж номеров</li><li>Используй метроном и другие инструменты</li></ul>
+              <a class="role-action" href="https://nasuta.ru/Sinhronica/" data-open-app data-audience="coach">Попробовать Синхронику <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
         </div>
+      </div>
+    </section>
+
+    <section class="section moments-section" id="moments" aria-labelledby="moments-title">
+      <div class="container">
+        <div class="moments-heading">
+          <div><p class="eyebrow">В жизни, а не в таблице</p><h2 id="moments-title">Три знакомых момента.<br>Один удобный инструмент.</h2></div>
+          <p class="body-lead">Синхроника полезна не только в день соревнований. Вот как она может помочь в обычной спортивной неделе.</p>
+        </div>
+        <div class="moment-grid">
+          <article class="moment-card">
+            <div class="moment-top"><span class="moment-number">01</span><span class="moment-tag">Спортсменке · после тренировки</span></div>
+            <div class="moment-symbol" aria-hidden="true"><svg class="icon"><use href="#i-calendar"/></svg></div>
+            <h3>«Сегодня получилось чуть лучше»</h3>
+            <p>Отметь занятие, своё состояние и пару мыслей. Так маленькие шаги не теряются между тренировками.</p>
+            <div class="moment-result"><span>Что остаётся</span><strong>Твой личный дневник</strong></div>
+          </article>
+          <article class="moment-card">
+            <div class="moment-top"><span class="moment-number">02</span><span class="moment-tag">Родителю · после старта</span></div>
+            <div class="moment-symbol moment-violet" aria-hidden="true"><svg class="icon"><use href="#i-medal"/></svg></div>
+            <h3>«Этот старт хочется запомнить»</h3>
+            <p>Сохрани достижение ребёнка и отдельно учти расходы на спорт. Важные моменты и цифры — в одном личном пространстве.</p>
+            <div class="moment-result"><span>Что остаётся</span><strong>История достижений и бюджет</strong></div>
+          </article>
+          <article class="moment-card">
+            <div class="moment-top"><span class="moment-number">03</span><span class="moment-tag">Тренеру · перед занятием</span></div>
+            <div class="moment-symbol moment-blue" aria-hidden="true"><svg class="icon"><use href="#i-music"/></svg></div>
+            <h3>«Вся структура номера под рукой»</h3>
+            <p>Открой карточку с блоками и хронометражем, проверь фигуру в справочнике и возвращайся к работе в бассейне.</p>
+            <div class="moment-result"><span>Что остаётся</span><strong>Рабочие материалы для подготовки</strong></div>
+          </article>
+        </div>
+        <p class="moments-note"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg> У каждого свой локальный профиль: записи не синхронизируются между участниками автоматически.</p>
       </div>
     </section>
 
@@ -266,7 +358,7 @@
   <footer class="footer"><div class="container footer-row"><a class="brand" href="#top"><img src="assets/icons/sinhronica-v1-icon-192.png" alt="" width="43" height="43"/><span><span class="brand-name" style="display:block">Синхроника</span><span class="brand-caption" style="display:block">Твой спорт. Твой прогресс.</span></span></a><div class="footer-links"><a href="#audiences">Для кого</a><a href="#privacy">Про данные</a><a href="#faq">Вопросы</a><a href="https://nasuta.ru/Sinhronica/" data-open-app>В приложение ↗</a></div><span>© 2026 · Синхроника</span></div></footer>
   <script>
     // Tracks only the opening of the application; no profile or training data is sent from this page.
-    document.querySelectorAll('a[href="https://nasuta.ru/Sinhronica/" data-open-app]').forEach((link)=>{link.addEventListener('click',()=>{if(typeof window.ym==='function'){window.ym(114334019,'reachGoal','sinhronica_landing_open_app')}})})
+    document.querySelectorAll('a[data-open-app]').forEach((link)=>{link.addEventListener('click',()=>{if(typeof window.ym==='function'){window.ym(114334019,'reachGoal','sinhronica_landing_open_app',{audience:link.getAttribute('data-audience')||'general'})}})})
   </script>
   <script>
     (function (m, e, t, r, i, k, a) {
